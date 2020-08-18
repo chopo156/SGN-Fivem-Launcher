@@ -1,0 +1,193 @@
+body {
+	background: url(background.jpg) no-repeat center center fixed;
+	background-size: cover;
+	-webkit-font-smoothing: antialiased;
+	overflow: hidden;
+  }
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v19/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
+  }
+  @font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 500;
+	src: local('Roboto Medium'), local('Roboto-Medium'), url(https://fonts.gstatic.com/s/roboto/v19/KFOlCnqEu92Fr1MmEU9fBBc9.ttf) format('truetype');
+  }
+
+  * {
+	margin: 0;
+	padding: 0;
+  }
+  .header {
+	width: 100%;
+	height: 80px;
+	background: inherit;
+	position: absolute;
+	overflow: hidden;
+	border-bottom: 1px SOLID rgba(110, 110, 110, 0.6);
+  }
+  .header:before {
+	content: " ";
+	background: inherit;
+	position: absolute;
+	left: -25px;
+	right: -25px;
+	top: -35px;
+	bottom: -25px;
+	box-shadow: inset 0 0 0 200px rgba(100, 100, 100, 0.3);
+	filter: blur(10px);
+  }
+  .header-pre-tag {
+	width: 100%;
+	height: 4px;
+	background: #a0a0a0;
+  }
+  .header-tag {
+	border-top: 8px solid #a0a0a0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	height: 0;
+	width: 81%;
+  }
+  .logo {
+	height: 50px;
+	padding-left: 20px;
+  }
+  .navbar {
+	width: 100%;
+	height: 68px;
+	margin-top: 12px;
+	position: absolute;
+	overflow: hidden;
+	z-index: 100000;
+	display: inline-block;
+  }
+  .navbar-items {
+	display: inline-block;
+	height: 68px;
+	margin-top: 0px;
+	width: 100%;
+	position: absolute;
+	margin-left: 40px;
+	line-height: 68px;
+  }
+  .navbar-items > a {
+	text-decoration: none;
+	color: #868686;
+	font-family: 'Roboto', sans-serif;
+	font-size: 22px;
+	padding-right: 26px;
+  }
+  .navbar-items > .active {
+	color: #FFF;
+	animation: glow 1s ease-in-out infinite alternate;
+  }
+  @-webkit-keyframes glow {
+	from {
+	  text-shadow: 0 0 0px #636363, 0 0 5px #636363, 0 0 10px #636363, 0 0 20px #636363;
+	}
+	to {
+	  text-shadow: 0 0 0px #dadada, 0 0 10px #dadada, 0 0 10px #dadada, 0 0 20px #dadada;
+	}
+  }
+  .sidebar {
+	width: 220px;
+	height: 100vh;
+	background: rgba(39, 39, 39, 0.83);
+	border-right: 1px SOLID rgba(110, 110, 110, 0.6);
+	padding-top: 5em;;
+  }
+  #servers {
+	  display: flex;
+  }
+  .serverContent {
+	height: 100vh;
+    width: 100%;
+    padding-top: 5em;
+  }
+  .sidebar-item {
+	width: 220px;
+	height: 46px;
+  }
+  .game-icon {
+	height: 30px;
+	width: 30px;
+	border-radius: 100px;
+	margin-top: 8px;
+	margin-left: 22px;
+	vertical-align: top;
+  }
+  .game-title {
+	color: #CCC;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	line-height: 46px;
+	padding-left: 10px;
+  }
+  .hidden {
+	  display: none !important;
+  }
+  .activeItem {
+	animation: glow 1s ease-in-out infinite alternate;
+  }
+
+  .card {
+	  background-color: transparent !important;
+	height: 100vh;
+    display: flex;
+    flex-direction: column;
+	align-items: center;
+	color: white;
+	text-align: center;
+  }
+
+  .card img {
+	  margin-bottom: 2em;
+	  width: 5em;
+      padding-top: 2rem;
+  }
+
+  .btn-join {
+	  border: none;
+	  margin-top: 2em;
+	  width: 10em;
+	  height: 2em;
+	  color: white;
+	  background-color: green;
+  }
+  .btn-join:hover {
+	  background-color: white;
+	  color: green;
+	  cursor: pointer;
+  }
+  .changeLogBox {
+    margin: 1em;
+    padding: 1.5em;
+	font-weight: bold;
+	background: rgba(79, 79, 79, 0.50);
+  }
+
+  .playerBox {
+	margin: 1em;
+	padding: 1em;
+	
+	font-weight: bold;
+	background: rgba(79, 79, 79, 0.50);
+  }
+	.row {
+		padding-left: 1.5rem !important;
+	}
+  .playerBox p {
+	  margin-bottom: unset !important;
+  }
+
+
+  hr {
+	border-top: 1px solid rgb(255, 255, 255) !important;
+  }
+  #sOffline {
+	color: red;
+  }
